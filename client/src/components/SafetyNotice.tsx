@@ -14,8 +14,8 @@ export default function SafetyNotice() {
       }}
     >
       Glow supports well-being but isn’t a substitute for a clinician. If you’re in crisis
-      or thinking about harming yourself, call your local emergency number. In the UK,
-      call <strong>999</strong>, or contact Samaritans at <strong>116 123</strong>.
+      or thinking about harming yourself, call your local emergency number. In the UK, call
+      <strong> 999</strong>, or contact Samaritans at <strong>116 123</strong>.
     </div>
   );
 }

@@ -5,6 +5,6 @@ export type Message = {
   role: Role;
   text: string;
   createdAt: number;
-  pending?: boolean;
-  error?: boolean;
+  pending?: boolean;  // typing bubble
+  error?: boolean;    // future use
 };
