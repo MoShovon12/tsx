@@ -1,2 +1,36 @@
-@import "tailwindcss";
+:root{
+  --bg: #f8fafc;
+  --card-bg: rgba(255,255,255,0.92);
+  --border: #e2e8f0;
+  --text: #0f172a;
+  --muted: #64748b;
+  --accent1: #10b981;
+  --accent2: #06b6d4;
+  --accent3: #8b5cf6;
+}
 
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(16,185,129,0.12), transparent),
+    radial-gradient(900px 500px at 90% -10%, rgba(99,102,241,0.12), transparent),
+    var(--bg);
+}
+
+/* Simple card + scroll styling */
+.card{ background:var(--card-bg); border:1px solid var(--border); border-radius:20px; box-shadow:0 8px 24px rgba(0,0,0,.04); }
+.scroll{ overflow:auto; }
+.scroll::-webkit-scrollbar{ width:8px; height:8px; }
+.scroll::-webkit-scrollbar-thumb{ background:#cbd5e1; border-radius:999px; }
+.scroll::-webkit-scrollbar-track{ background:#f1f5f9; }
+
+/* Gradient text for logo */
+.glow-text{
+  background-image: linear-gradient(90deg, var(--accent1), var(--accent2), var(--accent3));
+  -webkit-background-clip: text; background-clip:text; color:transparent;
+  text-shadow: 0 0 12px rgba(16,185,129,0.35);
+}
